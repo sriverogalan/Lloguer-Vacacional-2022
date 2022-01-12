@@ -7,7 +7,7 @@ const { watch } = require('gulp');
   function buildStyles() {
     return gulp.src('./scss/**/*.scss')
       .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-      .pipe(gulp.dest('./dist/css'));
+      .pipe(gulp.dest('./css'));
   }
 
   function controlaSass() {
